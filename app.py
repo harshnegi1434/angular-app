@@ -6,5 +6,9 @@ app = Flask(__name__)
 def hello_world():
     return "<h1> Hello, World!</h1>"
 
+@app.route("/check")
+def home():
+    return "<h1> API is working! </h1>"
+
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=5000)
